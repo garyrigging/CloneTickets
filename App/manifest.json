@@ -1,0 +1,23 @@
+{
+  "name": "BulkCompose",
+  "author": {
+    "name": "Gary Timpane",
+    "email": "gtimpane@etsy.com",
+    "url": "https://www.etsy.com"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": {
+    "support": {
+      "nav_bar": "assets/iframe.html"
+    }
+  },
+  "parameters": [
+  	{
+  		"name": "external_id",
+  		"type": "checkbox"
+  	}
+  ],
+  "version": "1.0",
+  "frameworkVersion": "2.0"
+}
