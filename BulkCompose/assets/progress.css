@@ -1,0 +1,26 @@
+.loader-blue {
+	background-color:#2196F3!important;
+	color:#fff!important;
+
+}
+.loader-center {
+	text-align:center!important;
+}
+.loader-container:after,.loader-container:before {
+	content:"";
+	display:table;
+	clear:both;
+}
+.loader-container {
+	margin-top:16px;
+	margin-bottom: 16px;
+}
+.loader-light-grey {
+	background-color:#f1f1f1!important;
+	color:#000!important;
+	margin: 16px;
+	border-radius:16px;
+}
+.loader-round-xlarge {
+	border-radius:16px;
+}

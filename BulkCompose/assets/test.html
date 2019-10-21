@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+   <!--See Using Zendesk Garden:
+    https://developer.zendesk.com/apps/docs/developer-guide/setup#using-zendesk-garden
+    https://garden.zendesk.com/css-components/bedrock/
+    https://garden.zendesk.com/css-components/utilities/typography/
+   -->
+  <link href="test.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
+  
+</head>
+<body>
+  <img id="loader" alt="loader_gif" src="loader.gif"/>
+  <div id="content"></div>
+  <script id="validation-template" type="text/x-handlebars-template">
+    <div class='result-wrapper'>
+    <div class="inline">{{{userResults}}}</div>
+    </div>
+    <div class='title'>Subject: </div>
+    <div class='result-wrapper'><div>{{subject}}</div></div>
+    <div class='title'>Body: </div>
+    <div class='result-wrapper'>{{{ticketResults}}}</div>
+    <div class='title'>Fields: </div>
+    <div class='result-wrapper'>
+    <div id='ticket-fields'>
+      {{# each fields}}
+      <div>{{this.key}} : {{this.value}}</div>
+      {{/each}}
+    </div>
+    </div>
+    {{#if warning}}
+    {{{warning}}}
+    {{/if}}
+    <div style='margin-top:5px;'>
+    {{{submitText}}}
+    {{{cancel}}}
+   </div>
+  </script>
+  <script src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://assets.zendesk.com/apps/sdk/2.0/zaf_sdk.js"></script>
+  <script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.min.js"></script>
+  <script type="text/javascript" src="test.js"></script>
+
+</body>
+</html>

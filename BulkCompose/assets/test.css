@@ -1,0 +1,29 @@
+.inline {
+	display: inline-block;
+}
+#recipient-list {
+	border-radius: 30px;
+	background-color: black;
+	color: white;
+	padding: 2px 5px;
+}
+.result-wrapper {
+	padding: 5px;
+	border: solid;
+	border-color: lightgrey;
+	border-width: 2px;
+	border-radius: 4px;
+	margin:1px;
+}
+.result-wrapper.warning {
+	background-color: lightyellow;
+	color: red;
+	font-weight: bold;
+}
+.warning {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.title {
+	font-weight: bold; 
+}

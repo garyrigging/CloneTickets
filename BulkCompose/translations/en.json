@@ -1,0 +1,12 @@
+{
+  "app": {
+    "name": "Bulk Proactive",
+    "short_description": "Clones a sample ticket as a template to many users",
+    "long_description": "Provide the app with the ticket ID of the \n ticket you would like to duplicate. Provide a list of user \n IDs to be requesters. Configure what type of IDs to use from settings",
+    "installation_instructions": "Provide a list of ticket fields for the form \n and you're off to the races",
+    "parameters": {
+      "external_id"     : { "label": "Use users' external ids to verify?\n (ZD ids when unchecked)" }
+    }
+
+  }
+}
